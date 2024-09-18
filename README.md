@@ -47,7 +47,8 @@ pip install ray[tune]
 conda install xlsxwriter
 
 (conda install -c conda-forge argparse - not needed if you have python version 3* and higher, it's pre-installed )
- conda install -c conda-forge imbalanced-learn
+
+conda install -c conda-forge imbalanced-learn
  
 conda install pytorch torchvision -c pytorch
 
