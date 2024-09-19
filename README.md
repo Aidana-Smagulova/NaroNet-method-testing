@@ -61,3 +61,10 @@ conda install -c conda-forge tensorboard
 conda install -c conda-forge tensorflow
  
 conda install cuda-cudart cuda-version=12
+
+
+
+
+after this i added the NaroNet-0.0.11 tar zip file into my naronet workspace on cluster 
+
+and ran pip install NaroNet with my conda env activated. this let me install missing packages and build naronet. 
