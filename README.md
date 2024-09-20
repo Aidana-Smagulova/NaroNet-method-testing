@@ -70,7 +70,7 @@ conda install -c conda-forge tensorflow
 conda install cuda-cudart cuda-version=12
 
 
-
+blablabla
 
 after this i added the NaroNet-0.0.11 tar zip file into my naronet workspace on cluster 
 
