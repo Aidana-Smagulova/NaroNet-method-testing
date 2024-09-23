@@ -20,10 +20,29 @@
 </div>
 
 
-conda install cuda-cudart cuda-version=12
-
-
 
 you could run pip install NaroNet with my conda env activated. this allows to build naronet. but the package version does not correspond to the git version, so instead i will be cloning the git repository to my cluster and working with it there. 
+
+
+running: 
+<div class="highlight">
+    <pre tabindex="0" class="chroma">
+        <code class="language-fallback" data-lang="fallback">
+           from NaroNet.utils.DatasetParameters import parameters
+from NaroNet.Patch_Contrastive_Learning.patch_contrastive_learning import patch_contrastive_learning
+from NaroNet.Patch_Contrastive_Learning.preprocess_images import preprocess_images
+from NaroNet.architecture_search.architecture_search import architecture_search
+from NaroNet.NaroNet import run_NaroNet
+from NaroNet.NaroNet_dataset import get_BioInsights
+        </code>
+    </pre>
+</div>
+
+need to install more dependencies: 
+(NaroNet3) [hd_vb248@o05i15 architecture_search]$ pip install -U "ray[data,train,tune,serve]"
+(NaroNet3) [hd_vb248@o05i15 architecture_search]$ pip install torch-geometric
+(NaroNet3) [hd_vb248@o05i15 architecture_search]$ conda install pytorch-scatter -c pyg
+
+for newer versions of ray[tune] "ray.tune.suggest" will not work, so the architecture_search file had to be edited to "ray.tune.search" 
 
 
