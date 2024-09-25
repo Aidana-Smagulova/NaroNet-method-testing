@@ -39,10 +39,13 @@ from NaroNet.NaroNet_dataset import get_BioInsights
 </div>
 
 need to install more dependencies: 
-(NaroNet3) [hd_vb248@o05i15 architecture_search]$ pip install -U "ray[data,train,tune,serve]"
-(NaroNet3) [hd_vb248@o05i15 architecture_search]$ pip install torch-geometric
-(NaroNet3) [hd_vb248@o05i15 architecture_search]$ conda install pytorch-scatter -c pyg
+pip install -U "ray[data,train,tune,serve]"
+pip install torch-geometric
+pip install -U ipywidgets
+conda install pytorch-scatter -c pyg
 
-for newer versions of ray[tune] "ray.tune.suggest" will not work, so the architecture_search file had to be edited to "ray.tune.search" 
+for newer versions of ray[tune] "ray.tune.suggest" will not work, so the architecture_search file had to be edited to "ray.tune.search" with vim editor 
+
+
 
 
