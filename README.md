@@ -46,6 +46,7 @@ conda install pytorch-scatter -c pyg
 
 for newer versions of ray[tune] "ray.tune.suggest" will not work, so the architecture_search file had to be edited to "ray.tune.search" with vim editor 
 
-
+problem: 
+NaroNet is built for TensorFlow v1 (1.14.x). The TensorFlow v2 has more functions and generally works way differently. To be able to run NaroNet with TF2, the code needs to be updated. The migration guide for TF2 is availble on the TF [webpage](https://www.tensorflow.org/guide/migrate/migrate_tf2). 
 
 
